@@ -18,3 +18,11 @@ d["12"]="{$(( $a*$b+$c ))}"
 d["13"]="{$(( $c+$a/$b ))}"
 d["14"]="{$(( $a%$b+$c ))}"
 
+#Read the values from the Dictionary into the array
+
+a[0]=${d[11]}
+a[1]=${d[12]}
+a[2]=${d[13]}
+a[3]=${d[14]}
+
+echo ${a[@]}
