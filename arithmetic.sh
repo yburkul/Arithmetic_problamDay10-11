@@ -10,3 +10,11 @@ echo "Value of a+b*c is: " $(( $a+$b*$c ))
 echo "Value of a*b+c is: " $(( $a*$b+$c ))
 echo "Value of c+a/b is: " $(( $c+$a/$b ))
 echo "Value of a%b+c is: " $(( $a%$b+$c ))
+
+#Store the result in Dictionary for every computation
+
+d["11"]="{$(( $a+$b*$c ))}"
+d["12"]="{$(( $a*$b+$c ))}"
+d["13"]="{$(( $c+$a/$b ))}"
+d["14"]="{$(( $a%$b+$c ))}"
+
