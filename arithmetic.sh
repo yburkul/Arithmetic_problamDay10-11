@@ -5,3 +5,5 @@
 read -p "Enter a number: " a
 read -p "Enter a number: " b
 read -p "Enter a number: " c
+
+echo "Value of a+b*c is: " $(( $a+$b*$c ))
