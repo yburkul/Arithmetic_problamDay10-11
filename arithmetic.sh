@@ -44,3 +44,19 @@ echo "Before sorting: " ${a[@]}
            done
        done
 echo "After sorting: " ${a[@]}
+
+#Result show in ascending order
+
+for(( i=0 ; i<=3 ; i++ ))
+do
+    for(( j=i+1 ; j<=3 ; j++ ))
+    do
+        if(( ${a[i]} > ${a[j]} ))
+        then
+             temp=${a[i]}
+             a[$i]=${a[j]}
+             a[$j]=$temp
+         fi
+     done
+done
+echo "after sorting ascending: " ${a[@]}
